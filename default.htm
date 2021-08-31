@@ -4,11 +4,11 @@
   <legend>Document Transmitall Form</legend>
   
 <ul class="mui-tabs__bar mui-tabs__bar--justified">
-  <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Section 1</a></li>
-  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Section 2</a></li>
-  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Section 3</a></li>
-    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Section 4</a></li>
-  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Section 5</a></li>
+  <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Customer Info</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Project Info</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">NDA</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Customer Contact</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Sales</a></li>
 </ul>
   
   <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
@@ -19,9 +19,7 @@
   <div class="mui-textfield">
     <input id=CustomerNumber type="Number" placeholder="Customer Number">
   </div>
-  <div class="mui-textfield">
-    <input id=CreditReviewed type="Number" placeholder="Customer Number">
-  </div>
+  
   <legend>Have Credit Reviewed?</legend>
   <div class="mui-radio">
     <label>
@@ -93,7 +91,67 @@
   
   
   </div><!--end tab-->
-  
+   <div class="mui-tabs__pane" id="pane-justified-3">
+     <legend>Non-disclosue/Confidentiality Agreement(complete only if this submission is for NDA only).
+ <div class="mui-textfield">
+    <input id=BusinessPurpose  type="text" placeholder="Business purpose">
+  </div>
+       
+ <legend>Are both parties providing confidential information?</legend>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ConfidentialInfoYes" value="1">
+      Yes
+    </label>
+  </div>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ConfidentialInfoNo" value="2">      
+      No
+    </label>
+  </div>       
+ 
+   <legend>The following checked items are part of the contract obligations (check all that apply)</legend>
+  <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="Liquidated" value="1">
+      Liquidated Damages
+    </label>
+      <div class="mui-textfield">
+    <input id=Liquidated type="text" placeholder="Liquidated Damages">
+        <legend><b>Liquidated damages must be approved</b></legend>
+  </div>
+
+  </div>
+  <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="PrevailingWageRates" value="2">        Prevailing wage Rates(country,state,federal)
+    </label>
+  </div>       
+       <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="PerformanceBond" value="2">Payment and/or Performance Bond
+    </label>
+  </div>       
+       <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="PrevailingWageRates" value="2">        Prevailing wage Rates(country,state,federal)
+    </label>
+  </div>       
+       <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="PerformanceBond" value="2">Payment and/or Performance Bond
+    </label>
+  </div>       
+            <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="InsuranceWrap" value="2">Insurance Wrap Program (OCIP/CCIP, etc.)
+    </label>
+  </div>       
+     
+       
+       
+  </div><!--end tab-->
   <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
 
 
