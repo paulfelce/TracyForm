@@ -1,269 +1,100 @@
-<form class="form-horizontal">
-<fieldset>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Text Input</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="placeholder" class="form-control input-md">
-  <span class="help-block">help</span>  
+    <link rel="stylesheet" type="text/css" media="screen" href="//cdn.muicss.com/mui-0.10.3/css/mui.css" />
+    <script src="//cdn.muicss.com/mui-0.10.3/js/mui.js"></script>
+<form class="mui-form">
+  <legend>Document Transmitall Form</legend>
+  
+<ul class="mui-tabs__bar mui-tabs__bar--justified">
+  <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Section 1</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Section 2</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Section 3</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Section 4</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Section 5</a></li>
+</ul>
+  
+  <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
+  
+  <div class="mui-textfield">
+    <input id=Customer type="text" placeholder="Customer Name">
   </div>
-</div>
-
-<!-- Form Name -->
-<legend>Document Transmittal</legend>
-
-<!-- Password input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="passwordinput">Password Input</label>
-  <div class="col-md-4">
-    <input id="passwordinput" name="passwordinput" type="password" placeholder="placeholder" class="form-control input-md">
-    <span class="help-block">help</span>
+  <div class="mui-textfield">
+    <input id=CustomerNumber type="Number" placeholder="Customer Number">
   </div>
-</div>
-
-<!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
-    </select>
+  <div class="mui-textfield">
+    <input id=CreditReviewed type="Number" placeholder="Customer Number">
   </div>
-</div>
-
-<!-- Select Basic -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="selectbasic">Select Basic</label>
-  <div class="col-md-4">
-    <select id="selectbasic" name="selectbasic" class="form-control">
-      <option value="1">Option one</option>
-      <option value="2">Option two</option>
-    </select>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Direct Customer:</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-  <span class="help-block">Customer Name</span>  
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textinput">Customer Number:</label>  
-  <div class="col-md-4">
-  <input id="textinput" name="textinput" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Multiple Radios (inline) -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="CreditReviewed">Have Credit Reviewed?</label>
-  <div class="col-md-4"> 
-    <label class="radio-inline" for="CreditReviewed-0">
-      <input type="radio" name="CreditReviewed" id="CreditReviewed-0" value="Y" checked="checked">
+  <legend>Have Credit Reviewed?</legend>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="CreditReviewedYes" value="1">
       Yes
-    </label> 
-    <label class="radio-inline" for="CreditReviewed-1">
-      <input type="radio" name="CreditReviewed" id="CreditReviewed-1" value="N">
+    </label>
+  </div>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="CreditReviewedNo" value="2">      
       No
     </label>
   </div>
-</div>
 
-<!-- Multiple Radios (inline) -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="ConfirmedDocument">Have you confirmed receipt of all the applicable contract documents? If not, please obtain before submitting?</label>
-  <div class="col-md-4"> 
-    <label class="radio-inline" for="ConfirmedDocument-0">
-      <input type="radio" name="ConfirmedDocument" id="ConfirmedDocument-0" value="Y" checked="checked">
+   
+    <div class="mui-textfield">
+    <input id=PaymentTerms type="text" placeholder="Payment Terms">
+  </div>
+  
+   <legend>Have you reviewed the scope of work and confirmed it is correct?</legend>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ScopeConfirmedYes" value="1">
       Yes
-    </label> 
-    <label class="radio-inline" for="ConfirmedDocument-1">
-      <input type="radio" name="ConfirmedDocument" id="ConfirmedDocument-1" value="N">
+    </label>
+  </div>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ScopeConfirmedNo" value="2">      
       No
     </label>
   </div>
-</div>
-
-<!-- Textarea -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="textarea">Text Area</label>
-  <div class="col-md-4">                     
-    <textarea class="form-control" id="textarea" name="textarea">default text</textarea>
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="EndUser">End User/Owner:</label>  
-  <div class="col-md-4">
-  <input id="EndUser" name="EndUser" type="text" placeholder="" class="form-control input-md" required="">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="ProjectName">Project Name/Number:</label>  
-  <div class="col-md-4">
-  <input id="ProjectName" name="ProjectName" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="ProjectValue">Est. Project Value:</label>  
-  <div class="col-md-4">
-  <input id="ProjectValue" name="ProjectValue" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="GrossMargin">Gross Margin</label>  
-  <div class="col-md-4">
-  <input id="GrossMargin" name="GrossMargin" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="DeliveryDate">Delivery Date and Lead Time:</label>  
-  <div class="col-md-4">
-  <input id="DeliveryDate" name="DeliveryDate" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="BidDueDate">If this is a Tender/Request for proposal, what is the bid due date:</label>  
-  <div class="col-md-4">
-  <input id="BidDueDate" name="BidDueDate" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="title1">Non-disclosure/Confidentiality Agreement(complete only if this submission is for NDA only).</label>  
-  <div class="col-md-4">
-  <input id="title1" name="title1" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="BusinessPurpose">Business Purpose</label>  
-  <div class="col-md-4">
-  <input id="BusinessPurpose" name="BusinessPurpose" type="text" placeholder="" class="form-control input-md">
-    
-  </div>
-</div>
-
-<!-- Multiple Checkboxes (inline) -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="BothParties">Are both parties providing confidential information</label>
-  <div class="col-md-4">
-    <label class="checkbox-inline" for="BothParties-0">
-      <input type="checkbox" name="BothParties" id="BothParties-0" value="Y">
+  
+   <legend>Have you confirmed receipt of all the applicable contract documents? If not, please obtain before submitting?</legend>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ScopeConfirmedYes" value="1">
       Yes
     </label>
-    <label class="checkbox-inline" for="BothParties-1">
-      <input type="checkbox" name="BothParties" id="BothParties-1" value="N">
+  </div>
+  <div class="mui-radio">
+    <label>
+      <input type="radio" id="ScopeConfirmedNo" value="2">      
       No
     </label>
   </div>
-</div>
 
-<!-- Multiple Checkboxes -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Contract Oblications"></label>
-  <div class="col-md-4">
-  <div class="checkbox">
-    <label for="Contract Oblications-0">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-0" value="1">
-      Liquidated Damages
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Contract Oblications-1">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-1" value="2">
-      Prevailing wage Rates(county,state, federal)
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Contract Oblications-2">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-2" value="4">
-      Payment and/or Performance Bond
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Contract Oblications-3">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-3" value="8">
-      Insurance Wrap Program(OCIP.CCIP, etc.)
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Contract Oblications-4">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-4" value="16">
-      Use of Subcontract Labor - hiring a vendor to perform work
-    </label>
-	</div>
-  <div class="checkbox">
-    <label for="Contract Oblications-5">
-      <input type="checkbox" name="Contract Oblications" id="Contract Oblications-5" value="32">
-      Use of third-party products
-    </label>
-	</div>
+  </div><!--end tab-->
+  
+  <div class="mui-tabs__pane" id="pane-justified-2">
+  <div class="mui-textfield">
+    <input id=EndUser  type="text" placeholder="End User/Owner">
   </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="ContactName">Customer Contact Name:</label>  
-  <div class="col-md-4">
-  <input id="ContactName" name="ContactName" type="text" placeholder="" class="form-control input-md" required="">
-    
+   <div class="mui-textfield">
+    <input id=ProjectName  type="text" placeholder="Project Name">
   </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="Phone">Phone</label>  
-  <div class="col-md-4">
-  <input id="Phone" name="Phone" type="text" placeholder="" class="form-control input-md" required="">
-    
+   <div class="mui-textfield">
+    <input id=ProjectValue  type="text" placeholder="Est. Project Value">
   </div>
-</div>
-
-<!-- Text input-->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="email">E-mail:</label>  
-  <div class="col-md-4">
-  <input id="email" name="email" type="text" placeholder="" class="form-control input-md">
-    
+     <div class="mui-textfield">
+    <input id=GrossMargin  type="text" placeholder="Gross Margin">
   </div>
-</div>
-
-<!-- Button -->
-<div class="form-group">
-  <label class="col-md-4 control-label" for="submit">Submit</label>
-  <div class="col-md-4">
-    <button id="submit" name="submit" class="btn btn-primary"></button>
+       <div class="mui-textfield">
+    <input id=DeliveryDate  type="text" placeholder="Delivery Date and Lead Time">
   </div>
-</div>
+         <div class="mui-textfield">
+    <input id=BidDueDate  type="text" placeholder="If this is a Tender/Request for Proposal, what is the bid due date?">
+  </div>
+  
+  
+  </div><!--end tab-->
+  
+  <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
 
-</fieldset>
+
 </form>
