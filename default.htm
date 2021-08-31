@@ -7,8 +7,8 @@
   <li class="mui--is-active"><a data-mui-toggle="tab" data-mui-controls="pane-justified-1">Customer Info</a></li>
   <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Project Info</a></li>
   <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">NDA</a></li>
-    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-2">Customer Contact</a></li>
-  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-3">Sales</a></li>
+    <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-4">Customer Contact</a></li>
+  <li><a data-mui-toggle="tab" data-mui-controls="pane-justified-5">Sales</a></li>
 </ul>
   
   <div class="mui-tabs__pane mui--is-active" id="pane-justified-1">
@@ -147,12 +147,71 @@
     <label>
       <input type="checkbox" id="InsuranceWrap" value="2">Insurance Wrap Program (OCIP/CCIP, etc.)
     </label>
-  </div>       
+  </div>    
+       
+            <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="SubcontractLabour" value="2">Use of Subcontract Labor - hiring a vendor to perform work
+    </label>
+  </div>           
+                   <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="ThirdParty" value="2">Use of third-party products
+    </label>
+  </div>    
      
        
        
   </div><!--end tab-->
+     <div class="mui-tabs__pane" id="pane-justified-4">
+       
+<div class="mui-textfield">
+    <input id=CustomerContactName type="text" placeholder="Customer  Contact Name"> 
+  </div>
+  <div class="mui-textfield">
+    <input id=CustomerPhone type="text" placeholder="Customer Phone">
+  </div>       
+       <div class="mui-textfield">
+    <input type=email d=CustomerEmail type="text" placeholder="Customer E-Mail">
+  </div>       
+       </div><!--end tab-->
+          <div class="mui-tabs__pane" id="pane-justified-5">
+       
+<div class="mui-textfield">
+    <input id=Sales type="text" placeholder="Sales"> 
+  </div>
+  <div class="mui-textfield">
+    <input id=ProjectManager type="text" placeholder="Project Manager">
+  </div>       
+       <div class="mui-textfield">
+    <input id=VP type="text" placeholder="Vice President">
+  </div>       
+             <div class="mui-textfield">
+    <input id=Other type="text" placeholder="Other">
+  </div>       
+                   <div class="mui-checkbox">
+    <label>
+      <input type="checkbox" id="Urgent" value="2">Submit as urgent
+    </label>
+  </div>  
+            
+                      <div class="mui-textfield">
+    <textarea id=AdditionalInfo type="text" placeholder="Additional Information, provide as needed"></textarea>
+  </div>       
+            
+<legend>By submitting this form and the applicable documents, you agree and acknowledge the information is correct to the best of your knowledge and understanding.   </legend>         
+       </div><!--end tab-->
+     
+
+     
   <button type="submit" class="mui-btn mui-btn--raised">Submit</button>
 
+     <br>
+          * Note all boxes are expandable.  Please compete and return by submitting this form.  Allow 7 to 10 business days
+for turnaround.
+     <p style="color:red">
+     If a C21 approval is required, additional
+information may be needed along with additional documentation.  C21 approval may cause a delay in response
+     </p>
 
 </form>
